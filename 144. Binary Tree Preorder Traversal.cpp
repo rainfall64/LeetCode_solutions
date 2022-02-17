@@ -10,14 +10,13 @@
  * };
  */
 class Solution {
-    vector<int> preTraversal(TreeNode* root, vector<int>& result)
+    void preTraversal(TreeNode* root, vector<int>& result)
     {
         if (!root)
-            return result;
+            return;
         result.push_back(root->val);
         preTraversal(root->left, result);
         preTraversal(root->right, result);
-        return result;
     }
 public:
     vector<int> preorderTraversal(TreeNode* root) {
