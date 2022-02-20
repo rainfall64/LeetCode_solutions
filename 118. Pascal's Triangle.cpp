@@ -1,3 +1,11 @@
+// Algorithm
+// result[0].size() != result[1].size();
+// result[i].size() = result[i + 1].size() - 1;
+// result[0][0]  = 1;
+// i = 1 to n - 1
+// j = 1 to i - 1
+// if j == i result[i][j] = 1;
+// else result[i][j] = result[i - 1][j - 1] + result[i - 1][j]
 class Solution
 {
 public:
