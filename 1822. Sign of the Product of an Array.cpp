@@ -2,7 +2,6 @@ class Solution {
 public:
     int arraySign(vector<int>& nums) {
         int neg = 0;
-        bool zero = false;
         for (auto x : nums)
         {
             if (x == 0)
